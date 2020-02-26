@@ -1,0 +1,116 @@
+@prefix : <https://bimerr.iot.linkeddata.es/def/sensor-data#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://bimerr.iot.linkeddata.es/def/sensor-data#> .
+
+<https://bimerr.iot.linkeddata.es/def/sensor-data#> rdf:type owl:Ontology ;
+                                                     <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" ;
+                                                     <http://purl.org/dc/elements/1.1/title> "Ontology model for Sensor Data"@en ;
+                                                     owl:versionInfo "0.0.1" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://bimerr.iot.linkeddata.es/def/sensor-data#isMeasuredIn
+:isMeasuredIn rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/saref4bldg#isMeasurementOf
+<https://w3id.org/def/saref4bldg#isMeasurementOf> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/saref4bldg#makesMeasurement
+<https://w3id.org/def/saref4bldg#makesMeasurement> rdf:type owl:ObjectProperty .
+
+
+###  https://w3id.org/def/saref4bldg#relatesToProperty
+<https://w3id.org/def/saref4bldg#relatesToProperty> rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/def/saref4bldg#hasTimeStamp
+<https://w3id.org/def/saref4bldg#hasTimeStamp> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/def/saref4bldg#hasValue
+<https://w3id.org/def/saref4bldg#hasValue> rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/def/saref4bldg#Actuator
+<https://w3id.org/def/saref4bldg#Actuator> rdf:type owl:Class ;
+                                           rdfs:subClassOf <https://w3id.org/def/saref4bldg#Device> .
+
+
+###  https://w3id.org/def/saref4bldg#Device
+<https://w3id.org/def/saref4bldg#Device> rdf:type owl:Class ;
+                                         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                           owl:onProperty <https://w3id.org/def/saref4bldg#makesMeasurement> ;
+                                                           owl:someValuesFrom <https://w3id.org/def/saref4bldg#Measurement>
+                                                         ] .
+
+
+###  https://w3id.org/def/saref4bldg#FeatureOfInterest
+<https://w3id.org/def/saref4bldg#FeatureOfInterest> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/saref4bldg#Measurement
+<https://w3id.org/def/saref4bldg#Measurement> rdf:type owl:Class ;
+                                              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                                                owl:onProperty :isMeasuredIn ;
+                                                                owl:someValuesFrom <https://w3id.org/def/saref4bldg#UnitOfMeasure>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://w3id.org/def/saref4bldg#isMeasurementOf> ;
+                                                                owl:someValuesFrom <https://w3id.org/def/saref4bldg#FeatureOfInterest>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://w3id.org/def/saref4bldg#relatesToProperty> ;
+                                                                owl:someValuesFrom <https://w3id.org/def/saref4bldg#Property>
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://w3id.org/def/saref4bldg#hasTimeStamp> ;
+                                                                owl:someValuesFrom xsd:dateTimeStamp
+                                                              ] ,
+                                                              [ rdf:type owl:Restriction ;
+                                                                owl:onProperty <https://w3id.org/def/saref4bldg#hasValue> ;
+                                                                owl:someValuesFrom xsd:float
+                                                              ] .
+
+
+###  https://w3id.org/def/saref4bldg#Property
+<https://w3id.org/def/saref4bldg#Property> rdf:type owl:Class .
+
+
+###  https://w3id.org/def/saref4bldg#Sensor
+<https://w3id.org/def/saref4bldg#Sensor> rdf:type owl:Class ;
+                                         rdfs:subClassOf <https://w3id.org/def/saref4bldg#Device> .
+
+
+###  https://w3id.org/def/saref4bldg#UnitOfMeasure
+<https://w3id.org/def/saref4bldg#UnitOfMeasure> rdf:type owl:Class .
+
+
+###  Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

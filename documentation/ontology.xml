@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://bimerr.iot.linkeddata.es/def/sensor-data#"
+     xml:base="https://bimerr.iot.linkeddata.es/def/sensor-data"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#">
+        <dc:publisher>http://www.oeg-upm.net/</dc:publisher>
+        <dc:title xml:lang="en">Ontology model for Sensor Data</dc:title>
+        <owl:versionInfo>0.0.1</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#isMeasuredIn -->
+
+
+    <owl:ObjectProperty rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#isMeasuredIn"/>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#isMeasurementOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/saref4bldg#isMeasurementOf"/>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#makesMeasurement -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/saref4bldg#makesMeasurement"/>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#relatesToProperty -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/def/saref4bldg#relatesToProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#hasTimeStamp -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/saref4bldg#hasTimeStamp"/>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#hasValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/saref4bldg#hasValue"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#Actuator -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#Actuator">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4bldg#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#Device -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#Device">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#makesMeasurement"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/saref4bldg#Measurement"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#FeatureOfInterest -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#FeatureOfInterest"/>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#Measurement -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#Measurement">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#isMeasuredIn"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/saref4bldg#UnitOfMeasure"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#isMeasurementOf"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/saref4bldg#FeatureOfInterest"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#relatesToProperty"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/def/saref4bldg#Property"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#hasTimeStamp"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/def/saref4bldg#hasValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#Property -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#Property"/>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#Sensor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#Sensor">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/def/saref4bldg#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/def/saref4bldg#UnitOfMeasure -->
+
+
+    <owl:Class rdf:about="https://w3id.org/def/saref4bldg#UnitOfMeasure"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
+
+

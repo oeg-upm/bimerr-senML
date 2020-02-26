@@ -1,0 +1,112 @@
+<https://bimerr.iot.linkeddata.es/def/sensor-data#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://bimerr.iot.linkeddata.es/def/sensor-data#> <http://purl.org/dc/elements/1.1/publisher> "http://www.oeg-upm.net/" .
+<https://bimerr.iot.linkeddata.es/def/sensor-data#> <http://purl.org/dc/elements/1.1/title> "Ontology model for Sensor Data"@en .
+<https://bimerr.iot.linkeddata.es/def/sensor-data#> <http://www.w3.org/2002/07/owl#versionInfo> "0.0.1" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/publisher
+<http://purl.org/dc/elements/1.1/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# https://bimerr.iot.linkeddata.es/def/sensor-data#isMeasuredIn
+<https://bimerr.iot.linkeddata.es/def/sensor-data#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/saref4bldg#isMeasurementOf
+<https://w3id.org/def/saref4bldg#isMeasurementOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/saref4bldg#makesMeasurement
+<https://w3id.org/def/saref4bldg#makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://w3id.org/def/saref4bldg#relatesToProperty
+<https://w3id.org/def/saref4bldg#relatesToProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/saref4bldg#hasTimeStamp
+<https://w3id.org/def/saref4bldg#hasTimeStamp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/def/saref4bldg#hasValue
+<https://w3id.org/def/saref4bldg#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/def/saref4bldg#Actuator
+<https://w3id.org/def/saref4bldg#Actuator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4bldg#Actuator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/saref4bldg#Device> .
+# 
+# https://w3id.org/def/saref4bldg#Device
+<https://w3id.org/def/saref4bldg#Device> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4bldg#Device> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#makesMeasurement> .
+_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/saref4bldg#Measurement> .
+# 
+# https://w3id.org/def/saref4bldg#FeatureOfInterest
+<https://w3id.org/def/saref4bldg#FeatureOfInterest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/saref4bldg#Measurement
+<https://w3id.org/def/saref4bldg#Measurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4bldg#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <https://bimerr.iot.linkeddata.es/def/sensor-data#isMeasuredIn> .
+_:genid2 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/saref4bldg#UnitOfMeasure> .
+<https://w3id.org/def/saref4bldg#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#isMeasurementOf> .
+_:genid3 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/saref4bldg#FeatureOfInterest> .
+<https://w3id.org/def/saref4bldg#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#relatesToProperty> .
+_:genid4 <http://www.w3.org/2002/07/owl#someValuesFrom> <https://w3id.org/def/saref4bldg#Property> .
+<https://w3id.org/def/saref4bldg#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#hasTimeStamp> .
+_:genid5 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<https://w3id.org/def/saref4bldg#Measurement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <https://w3id.org/def/saref4bldg#hasValue> .
+_:genid6 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.w3.org/2001/XMLSchema#float> .
+# 
+# https://w3id.org/def/saref4bldg#Property
+<https://w3id.org/def/saref4bldg#Property> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://w3id.org/def/saref4bldg#Sensor
+<https://w3id.org/def/saref4bldg#Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/def/saref4bldg#Sensor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/def/saref4bldg#Device> .
+# 
+# https://w3id.org/def/saref4bldg#UnitOfMeasure
+<https://w3id.org/def/saref4bldg#UnitOfMeasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/
