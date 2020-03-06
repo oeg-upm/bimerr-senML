@@ -2,6 +2,9 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 <..\index-en.html> a prov:Entity;
-	 dc:title "Ontology model for Sensor Data";
+	 dc:title "Sensor Data ontology";
+	 prov:wasAttributedTo :agent0;
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
 .
+:agent0 a prov:Agent; foaf:name "Serge Chavez Feria,
+María Poveda Villalón.".

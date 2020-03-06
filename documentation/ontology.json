@@ -2,56 +2,137 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#makesMeasurement"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseName"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#Measurement"
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid10",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#isMeasuredIn"
+    "@id" : "https://w3id.org/saref#isMeasuredIn"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#UnitOfMeasure"
+    "@id" : "https://w3id.org/saref#UnitOfMeasure"
   } ]
 }, {
-  "@id" : "_:genid3",
+  "@id" : "_:genid11",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#isMeasurementOf"
+    "@id" : "https://w3id.org/saref#isMeasurementOf"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#FeatureOfInterest"
+    "@id" : "https://w3id.org/saref#FeatureOfInterest"
   } ]
 }, {
-  "@id" : "_:genid4",
+  "@id" : "_:genid12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#relatesToProperty"
+    "@id" : "https://w3id.org/saref#relatesToProperty"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#Property"
+    "@id" : "https://w3id.org/saref#Property"
   } ]
 }, {
-  "@id" : "_:genid5",
+  "@id" : "_:genid13",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#hasTimeStamp"
+    "@id" : "https://w3id.org/saref#hasTimeStamp"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
   } ]
 }, {
-  "@id" : "_:genid6",
+  "@id" : "_:genid14",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#hasValue"
+    "@id" : "https://w3id.org/saref#hasValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseSum"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseValue"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "_:genid6",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#name"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#sum"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "_:genid8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#updateTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#integer"
+  } ]
+}, {
+  "@id" : "_:genid9",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/saref#makesMeasurement"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "https://w3id.org/saref#Measurement"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "http://purl.org/dc/elements/1.1/publisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
@@ -59,40 +140,58 @@
   "@id" : "http://purl.org/dc/elements/1.1/title",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/created" : [ {
+    "@language" : "en",
+    "@value" : "2020-02-01"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@language" : "en",
+    "@value" : "Serge Chavez Feria,\nMaría Poveda Villalón."
+  } ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@language" : "en",
+    "@value" : "The Sensor Data ontology has been developed to represent measurements generated by sensors located inside building spaces."
+  } ],
   "http://purl.org/dc/elements/1.1/publisher" : [ {
     "@value" : "http://www.oeg-upm.net/"
   } ],
   "http://purl.org/dc/elements/1.1/title" : [ {
     "@language" : "en",
-    "@value" : "Ontology model for Sensor Data"
+    "@value" : "Sensor Data ontology"
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "<http://purl.org/NET/rdflicense/cc-by4.0>"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@value" : "0.0.1"
+    "@value" : "0.0.2"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#isMeasuredIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
-}, {
-  "@id" : "https://w3id.org/def/saref4bldg#Actuator",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Actuator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Actuator"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#Device"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Device"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/saref4bldg#Device",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "SenML device"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://w3id.org/saref#Device"
+  }, {
     "@id" : "_:genid1"
-  } ]
-}, {
-  "@id" : "https://w3id.org/def/saref4bldg#FeatureOfInterest",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/def/saref4bldg#Measurement",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+  }, {
     "@id" : "_:genid2"
   }, {
     "@id" : "_:genid3"
@@ -102,32 +201,116 @@
     "@id" : "_:genid5"
   }, {
     "@id" : "_:genid6"
+  }, {
+    "@id" : "_:genid7"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/saref4bldg#Property",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/def/saref4bldg#Sensor",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sensor"
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://w3id.org/def/saref4bldg#Device"
+    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Device"
+  }, {
+    "@id" : "_:genid8"
   } ]
 }, {
-  "@id" : "https://w3id.org/def/saref4bldg#UnitOfMeasure",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
-}, {
-  "@id" : "https://w3id.org/def/saref4bldg#hasTimeStamp",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/saref4bldg#hasValue",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseSum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/saref4bldg#isMeasurementOf",
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#sum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#updateTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/saref#Device",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Device"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid9"
+  } ]
+}, {
+  "@id" : "https://w3id.org/saref#FeatureOfInterest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feature of interest"
+  } ]
+}, {
+  "@id" : "https://w3id.org/saref#Measurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Measurement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid10"
+  }, {
+    "@id" : "_:genid11"
+  }, {
+    "@id" : "_:genid12"
+  }, {
+    "@id" : "_:genid13"
+  }, {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "https://w3id.org/saref#Property",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Property"
+  } ]
+}, {
+  "@id" : "https://w3id.org/saref#UnitOfMeasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Unit of measure"
+  } ]
+}, {
+  "@id" : "https://w3id.org/saref#hasTimeStamp",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/saref#hasValue",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://w3id.org/saref#isControlledByDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/saref4bldg#makesMeasurement",
+  "@id" : "https://w3id.org/saref#isMeasuredByDevice",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
-  "@id" : "https://w3id.org/def/saref4bldg#relatesToProperty",
+  "@id" : "https://w3id.org/saref#isMeasuredIn",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/saref#isMeasurementOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/saref#makesMeasurement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/saref#relatesToProperty",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]
