@@ -3,4 +3,4 @@ This repository contains the code and documentation generated for the Sensor Dat
 https://bimerr.iot.linkeddata.es/def/sensor-data
 
 Current version of the ontology model
-![Current version of the model](https://github.com/oeg-upm/bimerr-senML/tree/master/diagrams/sensor_data.jpg "Sensor Data model")
+![Current version of the model](https://github.com/oeg-upm/bimerr-senML/tree/master/diagrams/diagram.jpg "Sensor Data model")
