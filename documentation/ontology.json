@@ -2,7 +2,7 @@
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseName"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseName"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -56,7 +56,7 @@
   "@id" : "_:genid2",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseSum"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseSum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -65,7 +65,7 @@
   "@id" : "_:genid3",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseTime"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseTime"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#dateTime"
@@ -74,7 +74,7 @@
   "@id" : "_:genid4",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseValue"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseValue"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -83,7 +83,7 @@
   "@id" : "_:genid5",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -92,7 +92,7 @@
   "@id" : "_:genid6",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#name"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#name"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -101,7 +101,7 @@
   "@id" : "_:genid7",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#sum"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#sum"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -110,7 +110,7 @@
   "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#updateTime"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#updateTime"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#integer"
@@ -125,31 +125,7 @@
     "@id" : "https://w3id.org/saref#Measurement"
   } ]
 }, {
-  "@id" : "http://purl.org/dc/elements/1.1/created",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/creator",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/description",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/publisher",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/elements/1.1/title",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/dc/terms/license",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
-  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
-}, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/elements/1.1/created" : [ {
     "@language" : "en",
@@ -178,23 +154,23 @@
     "@value" : "sd"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#"
   } ],
   "http://www.w3.org/2002/07/owl#versionInfo" : [ {
     "@value" : "0.0.2"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Actuator",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#Actuator",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Actuator"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Device"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#Device"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Device",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -218,41 +194,65 @@
     "@id" : "_:genid7"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Sensor",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#Sensor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Sensor"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#Device"
+    "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#Device"
   }, {
     "@id" : "_:genid8"
   } ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseName",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseSum",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseSum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseTime",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseValue",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseValue",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#name",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#name",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#sum",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#sum",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
 }, {
-  "@id" : "https://bimerr.iot.linkeddata.es/def/sensor-data#updateTime",
+  "@id" : "http://bimerr.iot.linkeddata.es/def/sensor-data#updateTime",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
   "@id" : "https://w3id.org/saref#Device",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],

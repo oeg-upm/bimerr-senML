@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="https://bimerr.iot.linkeddata.es/def/sensor-data#"
-     xml:base="https://bimerr.iot.linkeddata.es/def/sensor-data"
+<rdf:RDF xmlns="http://bimerr.iot.linkeddata.es/def/sensor-data#"
+     xml:base="http://bimerr.iot.linkeddata.es/def/sensor-data"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#">
+    <owl:Ontology rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#">
         <dc:created xml:lang="en">2020-02-01</dc:created>
         <dc:creator xml:lang="en">Serge Chavez Feria,
 María Poveda Villalón.</dc:creator>
@@ -18,7 +18,7 @@ María Poveda Villalón.</dc:creator>
         <dc:title xml:lang="en">Sensor Data ontology</dc:title>
         <terms:license>http://purl.org/NET/rdflicense/cc-by4.0</terms:license>
         <vann:preferredNamespacePrefix xml:lang="en">sd</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#"/>
+        <vann:preferredNamespaceUri rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#"/>
         <owl:versionInfo>0.0.2</owl:versionInfo>
     </owl:Ontology>
     
@@ -158,59 +158,59 @@ María Poveda Villalón.</dc:creator>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#baseName -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#baseName -->
 
 
-    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#baseName"/>
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#baseName"/>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#baseSum -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#baseSum -->
 
 
-    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#baseSum"/>
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#baseSum"/>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#baseTime -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#baseTime -->
 
 
-    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#baseTime"/>
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#baseTime"/>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#baseValue -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#baseValue -->
 
 
-    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#baseValue"/>
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#baseValue"/>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion -->
 
 
-    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion"/>
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion"/>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#name -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#name -->
 
 
-    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#name"/>
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#name"/>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#sum -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#sum -->
 
 
-    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#sum"/>
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#sum"/>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#updateTime -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#updateTime -->
 
 
-    <owl:DatatypeProperty rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#updateTime"/>
+    <owl:DatatypeProperty rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#updateTime"/>
     
 
 
@@ -240,60 +240,60 @@ María Poveda Villalón.</dc:creator>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#Actuator -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#Actuator -->
 
 
-    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#Actuator">
-        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#Device"/>
+    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#Actuator">
+        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#Device"/>
         <rdfs:label xml:lang="en">Actuator</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#Device -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#Device -->
 
 
-    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#Device">
+    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#Device">
         <rdfs:subClassOf rdf:resource="https://w3id.org/saref#Device"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#baseName"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#baseName"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#baseSum"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#baseSum"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#baseTime"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#baseTime"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#baseValue"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#baseValue"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#baseVersion"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#name"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#name"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#sum"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#sum"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -302,14 +302,14 @@ María Poveda Villalón.</dc:creator>
     
 
 
-    <!-- https://bimerr.iot.linkeddata.es/def/sensor-data#Sensor -->
+    <!-- http://bimerr.iot.linkeddata.es/def/sensor-data#Sensor -->
 
 
-    <owl:Class rdf:about="https://bimerr.iot.linkeddata.es/def/sensor-data#Sensor">
-        <rdfs:subClassOf rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#Device"/>
+    <owl:Class rdf:about="http://bimerr.iot.linkeddata.es/def/sensor-data#Sensor">
+        <rdfs:subClassOf rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#Device"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="https://bimerr.iot.linkeddata.es/def/sensor-data#updateTime"/>
+                <owl:onProperty rdf:resource="http://bimerr.iot.linkeddata.es/def/sensor-data#updateTime"/>
                 <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
