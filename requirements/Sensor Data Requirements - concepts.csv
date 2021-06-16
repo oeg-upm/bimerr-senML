@@ -1,0 +1,4 @@
+Concept,Other names/ids,Description
+Device,,"A tangible object designed to accomplish a particular task in households, common public buildings or offices."
+Sensor,,Device that perform the measurement
+Actuator,,Device that perform the action in the control loop

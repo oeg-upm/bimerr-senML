@@ -1,0 +1,7 @@
+Concept,Relation,Description,"Target object
+(should appear in the ""Concept list"")",Max cardinality,Ordering Needed (applicable for concepts with Max cardinality over 1),"(ignore if not sure or not applicable)
+Other characteristics:
+symmetric, transitive, has some special behaviour or meaning?
+etc.",Needed by,standards
+Sensor,subClassOf,,Device,,,,,
+Actuator,subClassOf,,Device,,,,,

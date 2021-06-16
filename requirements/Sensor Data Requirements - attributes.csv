@@ -1,0 +1,15 @@
+Concept,Attribute,Description,"Value type expected
+(integer, boolean, float, list of specific values, etc.)",Max cardinality,Ordering Needed (applicable for concepts with Max cardinality over 1),"Unit of measure
+(applicable only for ""measure"" data types)","Sensitive data (if applicable, e.g. personal data that need to be anonymized in BIF)",Timezone (applicable only for datetime data types),Related standard (if applicable)
+Sensor,updateTime,Period of time that represents the time before a sensor will provide an updated reading,Double,1,seconds,,,,SenML
+Device,name,Name of the device,String,1,,,,,SenML
+Device,timeType,"Type of time, relative or absolute","{relative, absolute}",1,,,,,SenML
+Device,timeValue,"Time value, when the measurement was taken",float,1,seconds,,,,SenML
+Device,unit,Unit of the measurement or command,String,1,,,,,SenML
+Device,value,Value of the measurement or command,Double,1,,,,,SenML
+Device,sum,Integrated sum of values over time,Double,1,,,,,SenML
+Device,baseName,A base name that is added to the name field,Double,1,,,,,SenML
+Device,baseTime,A base time that is added to the time field,Double,1,,,,,SenML
+Device,baseSum,A base sum that is added to the sum field,Double,1,,,,,SenML
+Device,baseValue,A base value that is added to the value field,Double,1,,,,,SenML
+Device,baseVersion,Version number of the media type format,Double,1,,,,,SenML

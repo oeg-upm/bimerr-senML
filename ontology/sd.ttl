@@ -22,7 +22,7 @@
                                                     <http://purl.org/dc/elements/1.1/title> "Sensor Data ontology"@en ;
                                                     dcterms:license "http://purl.org/NET/rdflicense/cc-by4.0" ;
                                                     vann:preferredNamespacePrefix "sd"@en ;
-                                                    owl:versionInfo "0.0.3" .
+                                                    owl:versionInfo "0.1.1" .
 
 #################################################################
 #    Annotation properties
@@ -66,36 +66,48 @@ vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
 
 ###  https://w3id.org/saref#isControlledByDevice
 <https://w3id.org/saref#isControlledByDevice> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://w3id.org/saref#Property> ;
+                                              rdfs:range <https://w3id.org/saref#Device> ;
                                               rdfs:comment "A relationship specifying the devices that can control a certain property."@en ;
                                               rdfs:label "is controlled by device"@en .
 
 
 ###  https://w3id.org/saref#isMeasuredByDevice
 <https://w3id.org/saref#isMeasuredByDevice> rdf:type owl:ObjectProperty ;
+                                            rdfs:domain <https://w3id.org/saref#Property> ;
+                                            rdfs:range <https://w3id.org/saref#Device> ;
                                             rdfs:comment "A relationship specifying the devices that can measure a certain property."@en ;
                                             rdfs:label "is measured by device"@en .
 
 
 ###  https://w3id.org/saref#isMeasuredIn
 <https://w3id.org/saref#isMeasuredIn> rdf:type owl:ObjectProperty ;
+                                      rdfs:domain <https://w3id.org/saref#Measurement> ;
+                                      rdfs:range <https://w3id.org/saref#UnitOfMeasure> ;
                                       rdfs:comment "A relationship identifying the unit of measure used for a certain entity."@en ;
                                       rdfs:label "is measured in"@en .
 
 
 ###  https://w3id.org/saref#isMeasurementOf
 <https://w3id.org/saref#isMeasurementOf> rdf:type owl:ObjectProperty ;
+                                         rdfs:domain <https://w3id.org/saref#Measurement> ;
+                                         rdfs:range <https://w3id.org/saref#FeatureOfInterest> ;
                                          rdfs:comment "A relationship between a measurement and the feature of interest whose quality was measured."@en ;
                                          rdfs:label "is measurement of"@en .
 
 
 ###  https://w3id.org/saref#makesMeasurement
 <https://w3id.org/saref#makesMeasurement> rdf:type owl:ObjectProperty ;
+                                          rdfs:domain <https://w3id.org/saref#Device> ;
+                                          rdfs:range <https://w3id.org/saref#Measurement> ;
                                           rdfs:comment "A relation between a device and the measurements it makes. Such measurement will link together the value of the measurement, its unit of measure and the property to which it relates."@en ;
                                           rdfs:label "makes measurement"@en .
 
 
 ###  https://w3id.org/saref#relatesToProperty
 <https://w3id.org/saref#relatesToProperty> rdf:type owl:ObjectProperty ;
+                                           rdfs:domain <https://w3id.org/saref#Measurement> ;
+                                           rdfs:range <https://w3id.org/saref#Property> ;
                                            rdfs:comment "A relationship between a measurement and the property it relates to."@en ;
                                            rdfs:label "relates to property"@en .
 
